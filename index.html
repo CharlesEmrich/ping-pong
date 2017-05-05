@@ -10,15 +10,33 @@
   </head>
   <body>
     <div class="container">
-      <form class="form-one">
-        <label>Input number here:</label>
-        <input id="user-number" type="number">
-        <button name="up">Count Up</button>
-        <button name="down">Count Down</button>
-      </form>
-      <div class="well">
-        <ul id="output">
-        </ul>
+      <div class="jumbotron">
+        <h1>Ping - Pong</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <h3>What this does:</h3>
+          <p>This app either counts from one to your number, or down from your number to one. Except:</p>
+          <ul>
+            <li>Numbers divisble by 3 are replaced with "ping."</li>
+            <li>Numbers divisible by 5 are replaced with "pong."</li>
+            <li>Numbers divisible by both 3 and 5 are replaced by "ping-pong"</li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+          <form class="form-one">
+            <label>Input number here:</label>
+            <input id="user-number" type="number">
+            <button name="up">Count Up</button>
+            <button name="down">Count Down</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="well">
+          <ul id="output">
+          </ul>
+        </div>
       </div>
     </div>
   </body>

@@ -1,7 +1,6 @@
 ///// Business Logic /////
 function count (number, direction) {
   var result = [];
-
   if (direction === "up") {
     for (var i = 1; i <= number; i++) {
       result.push(testNumber(i));
@@ -35,8 +34,8 @@ $(function() {
   $("button").click(function() {
     var input = parseInt($("input#user-number").val());
     var result = count(input, $(this)[0].name);
-    $("#output").empty();
 
+    $("#output").empty();
     for (var i = 0; i < result.length; i++) {
       $("#output").append("<li>" + result[i] + "</li>");
     }
