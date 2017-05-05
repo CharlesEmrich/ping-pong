@@ -11,7 +11,6 @@ function count (number, direction) {
       result.push(testNumber(i));
     }
   }
-
   return result;
 }
 
@@ -35,6 +34,11 @@ $(function() {
 
   $("button").click(function() {
     var input = parseInt($("input#user-number").val());
-    $("#output").text(count(input, $(this)[0].name));
+    var result = count(input, $(this)[0].name);
+    $("#output").empty();
+
+    for (var i = 0; i < result.length; i++) {
+      $("#output").append("<li>" + result[i] + "</li>");
+    }
   });
 });
