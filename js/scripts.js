@@ -52,7 +52,17 @@ $(function() {
 
     $("#output").empty();
     for (var i = 0; i < result.length; i++) {
-      $("#output").append("<li class='three-column'>" + result[i] + "</li>");
+      if (result[i] === "ping") {
+        $("#output").append("<li class='ping'>" + result[i] + "</li>");
+      } else if (result[i] === "pong") {
+        $("#output").append("<li class='pong'>" + result[i] + "</li>");
+      } else if (result[i] === "ping-pong") {
+        $("#output").append("<li class='ping pong'>" + result[i] + "</li>");
+      } else {
+        $("#output").append("<li class=''>" + result[i] + "</li>");
+      }
     }
+    $(".well").slideUp();
+    $(".well").slideDown();
   });
 });

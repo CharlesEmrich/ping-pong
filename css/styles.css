@@ -4,6 +4,10 @@ body {
   font-size: 15px;
 }
 
+h1 {
+  font-family: 'Lato', sans-serif;
+}
+
 .jumbotron {
   text-align: center;
   background-color: #534D56;
@@ -12,7 +16,8 @@ body {
 
 .well {
   background-color: #534D56;
-  color: #F8F1FF
+  color: #F8F1FF;
+  display: none;
 }
 
 .btn {
@@ -33,6 +38,20 @@ body {
   margin-bottom: 10px;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif;
+#output li {
+  text-align: center;
+  width: 5%;
+  margin-right: 5px;
+  border-radius: 5px;
+  border-right: solid 3px rgba(248, 241, 255, 0.3);
+  border-left: solid 3px rgba(248, 241, 255, 0.3);
+  display: inline-block;
+}
+
+#output li.ping {
+  font-style: italic;
+}
+
+#output li.pong {
+  font-weight: bold;
 }
