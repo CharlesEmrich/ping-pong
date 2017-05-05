@@ -4,31 +4,27 @@ function count (number, direction) {
 
   if (direction === "up") {
     for (var i = 1; i <= number; i++) {
-      if (i % 3 === 0 && i % 5 === 0) {
-        result.push("ping-pong")
-      } else if (i % 3 === 0) {
-        result.push("ping");
-      } else if (i % 5 === 0) {
-        result.push("pong");
-      } else {
-        result.push(i);
-      }
+      result.push(testNumber(i));
     }
   } else if (direction === "down") {
     for (var i = number; i >= 1; i--) {
-      if (i % 3 === 0 && i % 5 === 0) {
-        result.push("ping-pong")
-      } else if (i % 3 === 0) {
-        result.push("ping");
-      } else if (i % 5 === 0) {
-        result.push("pong");
-      } else {
-        result.push(i);
-      }
+      result.push(testNumber(i));
     }
   }
 
   return result;
+}
+
+function testNumber (number) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return "ping-pong";
+  } else if (number % 3 === 0) {
+    return "ping";
+  } else if (number % 5 === 0) {
+    return "pong";
+  } else {
+    return number;
+  }
 }
 
 ///// Front-End Logic /////
