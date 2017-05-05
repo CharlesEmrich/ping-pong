@@ -1,5 +1,4 @@
 # Ping-Pong
-===========
 ## Created by Charles Emrich
 
 ### Description

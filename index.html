@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -11,10 +12,10 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Ping - Pong</h1>
+        <h1>Ping - <strong>Pong</strong></h1>
       </div>
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7 info">
           <h3>What this does:</h3>
           <p>This app either counts from one to your number, or down from your number to one. Except:</p>
           <ul>
@@ -24,17 +25,18 @@
           </ul>
         </div>
         <div class="col-md-5">
-          <form class="form-one">
+          <form class="form-one form-group">
             <label>Input number here:</label>
-            <input id="user-number" type="number">
-            <button name="up">Count Up</button>
-            <button name="down">Count Down</button>
+            <input id="user-number" class="form-control" type="number">
+            <button class="btn btn-info" name="up">Count Up</button>
+            <button class="btn btn-info" name="down">Count Down</button>
           </form>
         </div>
       </div>
       <div class="row">
         <div class="well">
           <ul id="output">
+            <li>We'll show you your output here!</li>
           </ul>
         </div>
       </div>
