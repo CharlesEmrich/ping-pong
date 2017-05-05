@@ -25,6 +25,21 @@ function testNumber (number) {
   }
 }
 
+//NOTE: The initial description asks for "ping-pong" but the example displays "pingpong." If the latter is acceptable, a different testNumber function is possible:
+// function testNumberAnotherWay (number) {
+//   var result = "";
+//   if (number % 3 === 0) {
+//     result += "ping";
+//   }
+//   if (number % 5 === 0) {
+//     result += "pong";
+//   }
+//   if (number % 3 !== 0 && number % 5 !== 0) {
+//     return number;
+//   }
+//   return result;
+// }
+
 ///// Front-End Logic /////
 $(function() {
   $("form.form-one").submit(function(event) {
@@ -37,7 +52,7 @@ $(function() {
 
     $("#output").empty();
     for (var i = 0; i < result.length; i++) {
-      $("#output").append("<li>" + result[i] + "</li>");
+      $("#output").append("<li class='three-column'>" + result[i] + "</li>");
     }
   });
 });
