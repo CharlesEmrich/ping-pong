@@ -4,7 +4,9 @@ function countUp (number) {
 
   for (var i = 1; i <= number; i++) {
     if (i % 3 === 0) {
-      result.push("ping")
+      result.push("ping");
+    } else if (i % 5 === 0) {
+      result.push("pong");
     } else {
       result.push(i);
     }
